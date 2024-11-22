@@ -1,29 +1,31 @@
 # CSS-Selectors-101-Overview
 
 CSS Selectors 101
-Volusion
-January 27, 2015
-CSS Selectors 101
-When creating a website there are two essential coding languages being used - HTML and CSS. Cascading Style Sheets, or CSS, give your HTML layout, design, and display variations for various devices. By utilizing CSS selectors we can create a rule to target HTML elements that include properties to accomplish the desired design. We will cover what CSS selectors are, how to utilize them, and the types of selectors.
+Cascading Style Sheets, or CSS, give your HTML layout, design, and display variations for various devices.
+It creates a rule to target HTML elements that include properties to accomplish the desired design.
 
 What is a CSS selector?
-CSS selectors are part of a CSS rule that allows you to select the contents you want to style. In this post, we are going to look at the following types of selectors and see how we can utilize them.
-Basic Selectors
-Advanced Selectors
-Combinators
-Basic Selector Types
-Type selectors
-Class selectors
-ID selectors
-Universal selector
-Type Selectors
-Type selectors will match every instance of the element type (heading elements, p, span, div, etc.) in the document tree.
-The following rule will target all H1 elements in the document tree:
+CSS rule consists of CSS selectors to select the contents you want to style.
 
-h1 {
-    font-size: 26px;
-}
-Class Selectors
+            Basic Selectors
+            Advanced Selectors
+            Combinators
+            Basic Selector Types
+            Type selectors
+            Class selectors
+            ID selectors
+            Universal selector
+            
+## Type Selectors
+Match the element type (heading elements, p, span, div, etc.).
+
+This RULE will target all H1 elements in the document tree:
+
+        h1 {
+            font-size: 26px;
+        }
+
+## Class Selectors
 Class selectors are designated with a . (period) before the class name when being used in a selector. Suppose we have an HTML document that has the following snippet of code:
 <p class="quote">The only thing we have to fear is fear itself</p>
 <span class="author">Franklin D. Roosevelt</span>
@@ -42,7 +44,7 @@ text-align: right;
 }
 
 
-ID Selectors
+## ID Selectors
 As opposed to class selectors, an ID selectors uses a hash (#) when being used in a selector.
 <h1 id="main-title">Cascading Style Sheets</h1>
 Universal Selectors
@@ -51,10 +53,12 @@ div * {
     color: gray;
     font-size: 14px;
 }
-Advanced Selector Types
-Pseudo-elements
-Pseudo-classes
-Attribute selectors
+
+## Advanced Selector Types
+### Pseudo-elements
+### Pseudo-classes
+### Attribute selectors
+
 Pseudo-elements
 Pseudo-elements permits formatting based on information that lies outside of the document tree. As of CSS3, in order to designate the difference between pseudo-elements and pseudo-classes, pseudo-elements are designated with two colons. For Internet Explorer 8 and below support, use a single colon. There are currently five total pseudo-elements:
 ::after
